@@ -1,0 +1,63 @@
+/* Dom's Pizza Parlor - Global Styles */
+
+:root {
+  --pizza-red: #cc0000;
+  --pizza-yellow: #ffcc00;
+  --pizza-orange: #ff8800;
+  --pizza-dark: #111111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Comic Neue', cursive, system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  background-color: var(--pizza-dark);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--pizza-yellow);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--pizza-orange);
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility classes */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,281 @@
+.post-card {
+  background: linear-gradient(180deg, #fff5e6, #ffe6cc);
+  border: 5px solid #cc0000;
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  box-shadow: 8px 8px 0 #990000;
+  transition: all 0.3s;
+}
+
+.post-card:hover {
+  transform: translateY(-5px) rotate(1deg);
+  box-shadow: 12px 12px 0 #990000;
+}
+
+.post-card.cringe {
+  animation: cardCringe 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes cardCringe {
+  0% { transform: rotate(-2deg) scale(1); }
+  100% { transform: rotate(2deg) scale(1.02); }
+}
+
+.delete-post-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #cc0000;
+  border: 3px solid #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+.delete-post-btn:hover {
+  transform: scale(1.2) rotate(15deg);
+  background: #ff0000;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px dashed #ffcc00;
+}
+
+.post-author {
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #cc0000;
+}
+
+.post-date {
+  font-family: 'Comic Neue', cursive;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.post-title {
+  font-family: 'Bangers', cursive;
+  font-size: 1.8rem;
+  color: #cc0000;
+  text-shadow: 2px 2px 0 #ffcc00;
+  margin: 0 0 15px 0;
+  line-height: 1.2;
+}
+
+.post-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ffcc00, #ff8800);
+  padding: 10px 15px;
+  border-radius: 50px;
+  display: inline-flex;
+}
+
+.stars {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.rating-text {
+  font-family: 'Bangers', cursive;
+  font-size: 1rem;
+  color: #cc0000;
+}
+
+.post-content {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.weird-topping {
+  background: linear-gradient(90deg, #ff00ff22, #ff880022);
+  border: 3px solid #ff00ff;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+}
+
+.topping-label {
+  font-family: 'Bangers', cursive;
+  font-size: 1rem;
+  color: #ff00ff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.topping-value {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.comments-toggle {
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(180deg, #ff4400, #cc0000);
+  border: 3px solid #000;
+  border-radius: 30px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comments-toggle:hover {
+  transform: scale(1.05);
+  background: linear-gradient(180deg, #ff6600, #ff0000);
+}
+
+.toggle-icon {
+  font-size: 0.8rem;
+}
+
+.comments-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 3px dashed #cc0000;
+}
+
+.comments-list {
+  margin-bottom: 20px;
+}
+
+.comment {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+}
+
+.comment:hover {
+  transform: translateX(5px);
+  border-color: #ffcc00;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.comment-author {
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #ff4400;
+}
+
+.comment-date {
+  font-family: 'Comic Neue', cursive;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.comment-content {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.no-comments {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1rem;
+  color: #888;
+  text-align: center;
+  padding: 20px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-input {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1rem;
+  padding: 12px 15px;
+  border: 3px solid #cc0000;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.comment-input:focus {
+  outline: none;
+  border-color: #ff4400;
+  box-shadow: 0 0 10px rgba(255, 68, 0, 0.3);
+}
+
+.author-input {
+  background: #fff9f0;
+}
+
+.content-input {
+  background: #fff9f0;
+  min-height: 80px;
+  resize: vertical;
+}
+
+.submit-comment-btn {
+  font-family: 'Bangers', cursive;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(180deg, #00cc00, #009900);
+  border: 3px solid #000;
+  border-radius: 30px;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-comment-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 200, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .post-card {
+    padding: 20px;
+  }
+  
+  .post-title {
+    font-size: 1.4rem;
+  }
+  
+  .post-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
