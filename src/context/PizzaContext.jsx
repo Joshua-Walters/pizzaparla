@@ -125,7 +125,10 @@ export function PizzaProvider({ children }) {
   };
 
   const toggleAdmin = (password) => {
-    // Simple admin password (for demo purposes)
+    // DEMO ONLY: This is an intentionally simple "admin" feature for a parody website.
+    // The password is purposely easy to guess and there's a hint in the UI.
+    // This is NOT meant to be secure - it's part of the joke aesthetic.
+    // For a real application, use proper server-side authentication.
     if (password === 'pizza123') {
       setIsAdmin(true);
       return true;
